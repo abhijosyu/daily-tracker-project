@@ -90,7 +90,7 @@ const SideBar: React.FC<SideBarProps> = ({
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       .join(" ");
 
-    setErrorMessage(null); // sets the error message to null
+    setErrorMessage(null);
 
     setTimeout(() => {
       setErrorMessage(TitleCaseError); // sets the error message to the stored one 10 ms later
@@ -437,7 +437,6 @@ const SideBar: React.FC<SideBarProps> = ({
   const submitSort = () => {
     const type = sortSelected ? sort : "NONE";
     const isAscending = sortAscending == "Ascending" ? true : false;
-    // " + with the boolean: " + isAscending
     onSortTasks(type, isAscending);
   };
 

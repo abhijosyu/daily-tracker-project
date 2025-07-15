@@ -11,14 +11,7 @@ import LoginForm from "./Component/LoginForm";
 function App() {
   const [user, setUser] = useState<User | null>(null);
 
-  useEffect(() => {
-    if (!user) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [user]);
-
+  // makes it so the log in screen is not scrollable.
   useEffect(() => {
     if (!user) {
       document.body.classList.add("no-scroll");
@@ -29,6 +22,7 @@ function App() {
 
   const [showUserInfo, setShowUserInfo] = useState(false);
 
+  // for auto logging in
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, setUser);
     return () => unsubscribe();

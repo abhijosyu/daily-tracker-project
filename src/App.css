@@ -7,10 +7,11 @@ h1 {
 body {
   background-color: #110e1a;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow: auto;
 }
 
 body.no-scroll {
+  position: fixed;
   overflow: hidden;
   height: 100vh;
   touch-action: none;
