@@ -1,0 +1,18 @@
+button {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.2s, box-shadow 0.2s;
+  opacity: 0.7;
+}
+
+button:hover {
+  background-color: transparent;
+  transform: translateY(-4px);
+  opacity: 1;
+}

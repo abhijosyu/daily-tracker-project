@@ -1,0 +1,159 @@
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #110e1a;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.login-background {
+  background-image: url("../../daily-tracker/public/Images/LogInGridGrad.png");
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-background {
+  background: #110e1a;
+}
+
+.top-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #110e1a;
+}
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 5rem;
+}
+body,
+button,
+input,
+select,
+textarea,
+a,
+label,
+div {
+  cursor: url("/Images/SquaredPointer_00001.png") 8 4, default;
+}
+
+.shiny-text {
+  color: #b5b5b5a4;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
+
+.user-button {
+  background-image: url("/Images/UserIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.user-info {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #653dba;
+  padding: 5px 12px;
+  border-radius: 9px;
+  z-index: 999;
+  display: grid;
+  animation: fadeIn2 0.5s ease forwards;
+  opacity: 0;
+  min-width: 120px;
+  text-align: center;
+}
+
+.user-options {
+  position: fixed;
+  top: 1rem;
+  right: 8rem;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .user-options {
+    position: fixed;
+    top: 1rem;
+    right: 6rem;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 425px) {
+  .user-options {
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+  .user-button {
+    left: 500%;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn2 {
+  to {
+    opacity: 1;
+  }
+}

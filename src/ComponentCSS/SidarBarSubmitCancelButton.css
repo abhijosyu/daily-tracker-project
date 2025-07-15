@@ -1,0 +1,20 @@
+.side-bar-button-container {
+  display: flex;
+}
+
+.side-bar-button {
+  background-color: #471a58;
+  color: white;
+  font: "Inter", sans-serif;
+  padding: 0.5rem 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-bar-button:hover {
+  background-color: #471a58;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

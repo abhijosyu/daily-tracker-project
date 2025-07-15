@@ -1,0 +1,164 @@
+.selection-list select,
+.input-form input {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.selection-list select:hover,
+.input-form input:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 0 5px 1px white, 0 0 10px 5px var(--hover-glow);
+}
+
+.task-card button {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover button,
+.task-card-form:hover button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.task-card-form .add-button,
+.task-card-form .buttonCheck,
+.task-card-form .buttonCancel {
+  opacity: 1;
+}
+
+.task-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-card,
+.task-card-form {
+  flex: 0 0 245px;
+  max-width: 245px;
+  background-color: #1c1c2e;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 280px;
+  max-height: 500px;
+  height: fixed;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.task-card,
+.task-card-form {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover,
+.task-card-form:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 0 5px 1px white, 0 0 8px 3px var(--hover-glow);
+}
+
+.task-card-enlarge {
+  flex: 0 0 500px;
+  max-width: 500px;
+  min-height: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 0 50px 10px white, 0 0 100px 50px var(--hover-glow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card-enlarge:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 0 50px 10px white, 0 0 100px 50px var(--hover-glow);
+}
+
+@media (max-width: 1200px) {
+  .task-card,
+  .task-card-form {
+    min-height: 200px;
+    height: 280px;
+    width: 200px;
+    min-width: 200px;
+    max-width: 205px;
+  }
+  .task-card-enlarge .task-card {
+    height: 475px;
+    max-width: 600px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .task-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 1rem;
+  }
+  .task-card,
+  .task-card-form {
+    min-height: 200px;
+    height: auto;
+    width: 200px;
+    min-width: 200px;
+    max-width: 205px;
+  }
+  .center-task-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .center-task-only .task-card-form {
+    height: auto;
+    max-width: 600px;
+    width: 250px;
+    margin: 0;
+    margin-bottom: 150%;
+  }
+  .tasks-view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .task-card-enlarge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .task-card-enlarge .task-card {
+    height: auto;
+    max-width: 600px;
+    width: 250px;
+    margin: 0;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

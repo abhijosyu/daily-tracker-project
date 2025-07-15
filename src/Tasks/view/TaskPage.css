@@ -1,0 +1,57 @@
+html,
+body {
+  height: auto;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.task-view-layout {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  position: relative;
+}
+
+.tasks-view {
+  flex: 1;
+  padding: 1rem;
+}
+
+.sidebar-container {
+  width: 300px;
+  flex-shrink: 0;
+  height: auto;
+  align-self: stretch;
+  overflow-y: auto;
+  background-color: #f0e3ec;
+  padding: 1rem;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.mobile-sidebar-toggle {
+  position: fixed;
+  display: none;
+  top: 1rem;
+  left: 1rem;
+  color: #6c2d8f;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+  z-index: 10000;
+}
+
+@media (max-width: 600px) {
+  .mobile-sidebar-toggle {
+    display: block;
+  }
+  .task-view-layout {
+    flex-direction: row;
+  }
+
+  .tasks-view {
+    width: 100%;
+    padding: 1rem;
+  }
+}
