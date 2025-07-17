@@ -55,3 +55,10 @@ body {
     padding: 1rem;
   }
 }
+
+.task-view-layout {
+  display: flex;
+  align-items: stretch;
+  min-height: calc(100vh - 5rem);
+  position: relative;
+}

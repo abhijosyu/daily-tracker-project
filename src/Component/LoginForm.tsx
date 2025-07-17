@@ -147,6 +147,7 @@ export default function LoginForm() {
         ) : null}
         {isSignUp || useUsernameLogin ? (
           <input
+            className="input"
             type="text"
             placeholder="Username"
             value={username}
@@ -167,7 +168,7 @@ export default function LoginForm() {
               className="switch-username"
               onClick={() => setUseUsernameLogin(!useUsernameLogin)}
             >
-              {useUsernameLogin ? "Use Email Instead" : "Login with Username"}
+              {useUsernameLogin ? "Use Email Instead" : "Login With Username"}
             </button>
           ) : null}
 
@@ -176,7 +177,7 @@ export default function LoginForm() {
             <b>{isSignUp ? "Sign Up" : "Login"}</b>
           </button>
           <button type="button" onClick={() => setIsSignUp(!isSignUp)}>
-            <b>Switch to {isSignUp ? "Login" : "Sign Up"}</b>
+            <b>Switch To {isSignUp ? "Login" : "Sign Up"}</b>
           </button>
         </div>
       </form>
