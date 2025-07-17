@@ -60,6 +60,10 @@ div {
   cursor: url("/Images/SquaredPointer_00001.png") 8 4, default;
 }
 
+.login-background {
+  background-image: url("../public/Images/LogInGridGrad.png");
+}
+
 .shiny-text {
   color: #b5b5b5a4;
   background: linear-gradient(
