@@ -17,16 +17,18 @@ and due date.
 
 ### Editing Tasks:
 
-<img width="277" height="319" alt="image" src="https://github.com/user-attachments/assets/646f6cac-0516-4918-85df-31989234b63f" />  ➪ 
+- Edit Tasks: hover over the task and press the edit button, which is the icon that has a pencil on it
+
+<img width="277" height="319" alt="image" src="https://github.com/user-attachments/assets/646f6cac-0516-4918-85df-31989234b63f" />  
 <img width="279" height="533" alt="image" src="https://github.com/user-attachments/assets/4a1db217-4ce9-4697-a9a5-216c71f84135" />
 
-- Edit Tasks: hover over the task and press the edit button, which is the icon that has a pencil on it
 
 ### Deleting Tasks:
 
+- Delete Tasks: hover over the task and press the delete button, which is the icon that has a trash can on it
+- 
 <img width="279" height="313" alt="image" src="https://github.com/user-attachments/assets/de0face8-c5c2-4074-ae75-d3ed3b2b1727" />
 
-- Delete Tasks: hover over the task and press the delete button, which is the icon that has a trash can on it
 
 ## Sidebar
 
@@ -40,10 +42,20 @@ access the sidebar to view all of the categories and progress tags that you have
 
 - re-arrange the order of the tags to your liking
 
+<img width="299" height="727" alt="image" src="https://github.com/user-attachments/assets/cc173e79-3f90-4db6-810d-f256f3f9e285" />
+<img width="269" height="81" alt="image" src="https://github.com/user-attachments/assets/b8b86642-a308-491f-a5d0-9626c2f7d963" />
+<img width="280" height="163" alt="image" src="https://github.com/user-attachments/assets/92431ca3-b1b3-4213-9f87-7c266c883d77" />
+
+
+
 ### Sort
 
 - sort tasks by category, date, progress, or none
 
 - task can be sorted in ascending or descending order
 
-- All preferences and options are saved and will load back up when you re-enter the site!
+<img width="294" height="207" alt="image" src="https://github.com/user-attachments/assets/b9fc8edd-b8f2-4196-aec1-ff33e8485e2b" />
+
+### All preferences and options are saved and will load back up when you re-enter the site!
+
+
