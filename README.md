@@ -58,4 +58,18 @@ access the sidebar to view all of the categories and progress tags that you have
 
 ### All preferences and options are saved and will load back up when you re-enter the site!
 
+# Tech Stack
+
+## Frontend:
+
+- React & Vite
+- Typescript
+- CSS
+
+## Backend:
+
+- Firebase
+
+
+
 
