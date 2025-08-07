@@ -77,23 +77,6 @@ export default class TaskModel {
     this.saveToFirebase(task);
   }
 
-  /**
-   * filters the tasks based on the given categories.
-   * @param categories the categories to filter by
-   * @returns an array of tasks that match the given categories
-   */
-  filterTasks(categories: string[], progress: string[]): Task[] {
-    if (categories.length === 0 && progress.length === 0) {
-      return this.getTasksAsArray();
-    }
-    this.updateSelectedCategoriesFromFirebase(categories);
-    this.updateSelectedProgressFromFirebase(progress);
-    return this.getTasksAsArray().filter(
-      (task) =>
-        categories.includes(task.category) && progress.includes(task.progress)
-    );
-  }
-
   //#endregion
 
   // #region category functions
@@ -191,6 +174,10 @@ export default class TaskModel {
     } catch {}
   }
 
+  // #endregion
+
+  // #region sorting/filtering
+
   /**
    * Swaps an item in the categories or progress section up or down through delegating it to the respective model
    * @param item the item to swap
@@ -282,7 +269,24 @@ export default class TaskModel {
     return sortedTasks;
   };
 
-  // #endregion
+  /**
+   * filters the tasks based on the given categories.
+   * @param categories the categories to filter by
+   * @returns an array of tasks that match the given categories
+   */
+  filterTasks(categories: string[], progress: string[]): Task[] {
+    if (categories.length === 0 && progress.length === 0) {
+      return this.getTasksAsArray();
+    }
+    this.updateSelectedCategoriesFromFirebase(categories);
+    this.updateSelectedProgressFromFirebase(progress);
+    return this.getTasksAsArray().filter(
+      (task) =>
+        categories.includes(task.category) && progress.includes(task.progress)
+    );
+  }
+
+  //#endregion
 
   // #region getters
 
