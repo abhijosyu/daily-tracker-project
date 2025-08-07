@@ -21,7 +21,7 @@ and due date.
 
 ### Deleting Tasks:
 
-<img width="284" height="321" alt="image" src="https://github.com/user-attachments/assets/3403d41f-a7e7-4f0b-bd66-e5ce32eeba1b" />
+<img width="279" height="313" alt="image" src="https://github.com/user-attachments/assets/de0face8-c5c2-4074-ae75-d3ed3b2b1727" />
 
 - Delete Tasks: hover over the task and press the delete button, which is the icon that has a trash can on it
 
