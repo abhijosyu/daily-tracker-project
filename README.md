@@ -7,10 +7,10 @@ supported on all devices (laptop, tablet, phone)
 ## Tasks
 
 ### Adding Tasks:
-<img width="276" height="316" alt="Adding Task" src="https://github.com/user-attachments/assets/012c504c-17a3-4abc-8ebe-124ddb59b11b" />
+| <img width="276" height="316" alt="Adding Task" src="https://github.com/user-attachments/assets/012c504c-17a3-4abc-8ebe-124ddb59b11b" /> | adding a task is easy -> write what the task is in the task form, along with choosing the type of task (category), the progress,
+and due date. |
 
-adding a task is easy -> write what the task is in the task form, along with choosing the type of task (category), the progress,
-and due date.
+
 
 ### Editing Tasks:
 
