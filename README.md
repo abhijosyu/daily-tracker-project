@@ -17,7 +17,7 @@ and due date.
 
 ### Editing Tasks:
 
-<img width="277" height="319" alt="image" src="https://github.com/user-attachments/assets/646f6cac-0516-4918-85df-31989234b63f" /> ➪
+<img width="277" height="319" alt="image" src="https://github.com/user-attachments/assets/646f6cac-0516-4918-85df-31989234b63f" />  ➪ 
 <img width="279" height="533" alt="image" src="https://github.com/user-attachments/assets/4a1db217-4ce9-4697-a9a5-216c71f84135" />
 
 - Edit Tasks: hover over the task and press the edit button, which is the icon that has a pencil on it
