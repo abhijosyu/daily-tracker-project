@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBZCppWv6sTjy1tt7LIJnOq8kuutXIjp7U",
-  authDomain: "daily-tracker-586a8.firebaseapp.com",
-  projectId: "daily-tracker-586a8",
-  storageBucket: "daily-tracker-586a8.appspot.com",
-  messagingSenderId: "354105687889",
-  appId: "1:354105687889:web:1f34f7baef0f9c8d951d70",
-  measurementId: "G-1G7DPJSGCG",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_DAILY_TRACKER,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
