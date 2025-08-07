@@ -65,6 +65,7 @@ access the sidebar to view all of the categories and progress tags that you have
 - React & Vite
 - Typescript
 - CSS
+- HTML
 
 ## Backend:
 
