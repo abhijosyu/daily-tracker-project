@@ -1,5 +1,7 @@
 # [Trackly](https://daily-tracker-586a8.web.app/)
 
+# [Read Full Documentation Here](https://holistic-pear-355.notion.site/Daily-Tracker-24879801a76e80028951ee11118deef3)
+
 a website that tracks your tasks and compiles them into a neat, easy to read manner
 
 supported on all devices (laptop, tablet, phone)
