@@ -98,7 +98,7 @@ function App() {
             <TaskController />
           </>
         ) : (
-          <LoginForm />
+          <LoginForm onAuthSuccess={(user) => setUser(user)} />
         )}
       </div>
     </div>

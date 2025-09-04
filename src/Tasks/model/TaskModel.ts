@@ -218,7 +218,7 @@ export default class TaskModel {
             ));
         break;
       }
-      case "FILTER": {
+      case "CATEGORY": {
         const categoryList = Array.from(
           this.getCategoriesListSorted().map(([key]) => key)
         );
@@ -304,7 +304,7 @@ export default class TaskModel {
   sortMap(): string[][] {
     return [
       ["None", "None"],
-      ["Filter", "Filter"],
+      ["Category", "Category"],
       ["Progress", "Progress"],
       ["Date", "Date"],
     ];

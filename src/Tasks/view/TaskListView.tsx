@@ -348,16 +348,20 @@ const formatDueDate = (dueDate: Date): string => {
 
   const timeDiff = dueDate.getDate() - today.getDate();
 
-  if (timeDiff >= 0 && timeDiff <= 7) {
-    if (timeDiff == 0) {
-      return "Today";
+  if (dueDate.getMonth() == today.getMonth()) {
+    if (timeDiff >= 0 && timeDiff <= 7) {
+      if (timeDiff == 0) {
+        return "Today";
+      }
+      if (timeDiff == 1) {
+        return "Tomorrow";
+      }
+      return dueDate.toLocaleDateString("en-US", { weekday: "long" });
+    } else if (timeDiff == -1) {
+      return "Yesterday";
+    } else {
+      return dueDate.toLocaleDateString();
     }
-    if (timeDiff == 1) {
-      return "Tomorrow";
-    }
-    return dueDate.toLocaleDateString("en-US", { weekday: "long" });
-  } else if (timeDiff == -1) {
-    return "Yesterday";
   } else {
     return dueDate.toLocaleDateString();
   }
